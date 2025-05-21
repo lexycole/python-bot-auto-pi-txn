@@ -1,0 +1,98 @@
+/* Custom styles for Pi Auto Transaction Tool */
+
+/* Custom theming and overrides */
+:root {
+  --pi-color: #6f42c1; /* Purple shade for Pi branding */
+  --pi-color-light: #8458d3;
+  --pi-color-dark: #5e35b1;
+}
+
+/* Card customizations */
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+  font-weight: 600;
+}
+
+/* Balance display */
+#balanceDisplay {
+  font-family: monospace;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--bs-success);
+}
+
+/* Table customizations */
+.table-responsive {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+/* Custom animation for refresh button */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.fa-spin {
+  animation: spin 1.5s linear infinite;
+}
+
+/* Status message animations */
+.alert {
+  transition: all 0.3s ease;
+}
+
+.alert.d-none {
+  opacity: 0;
+}
+
+/* Better visual hierarchy */
+h1 {
+  font-weight: 700;
+  color: var(--pi-color);
+}
+
+h4 {
+  font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card-header h4 {
+    font-size: 1.2rem;
+  }
+  
+  #balanceDisplay {
+    font-size: 1.5rem;
+  }
+}
+
+/* Transaction table styling */
+#transactionsTableBody .text-truncate {
+  max-width: 120px;
+  display: inline-block;
+}
+
+#transactionsTableBody a {
+  text-decoration: none;
+}
+
+#transactionsTableBody a:hover {
+  text-decoration: underline;
+}
