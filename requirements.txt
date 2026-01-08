@@ -64,7 +64,7 @@ tomlkit==0.13.2
 trove-classifiers==2025.5.9.12
 typing-inspection==0.4.0
 typing_extensions==4.13.2
-urllib3==2.4.0
+urllib3==2.6.3
 utils==1.0.2
 virtualenv==20.31.2
 Werkzeug==3.1.3
